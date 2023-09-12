@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/temp3"
+    tools:context=".AddTask">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:title="TaskTracker"
+        app:titleTextColor="#fff"
+        app:titleMarginStart="1dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="ADD TASK"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/TaskName"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/round_border"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:inputType="text"
+        android:hint="Task Name"/>
+
+    <EditText
+        android:id="@+id/TaskDesc"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_border"
+        android:hint="Task Description"
+        android:padding="10dp"
+        android:inputType="text"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:id="@+id/DatePick"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="@drawable/round_border"
+        android:textSize="20dp"
+        android:drawableEnd="@drawable/baseline_calendar_month_24"
+        android:hint="Due Date" />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/imgBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:text="Image" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/taskImg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/list"
+        app:civ_border_color="#fff"
+        app:civ_border_width="3dp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/doneBtn"
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_bg"
+        android:text="Done"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

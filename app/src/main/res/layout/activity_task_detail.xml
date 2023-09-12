@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TaskDetail">
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbarTask"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#8E68A6"
+      app:title="To-Do List"
+      app:titleTextColor="#fff"
+      app:titleMarginStart="1dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="horizontal">
+  <TextView
+      android:id="@+id/textViewTaskTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Task Name: "
+      android:textSize="20sp"
+      android:textStyle="bold"
+      android:layout_marginBottom="8dp"/>
+  <TextView
+      android:id="@+id/TaskName"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="16sp"
+      android:layout_marginBottom="8dp"/>
+  </LinearLayout>
+
+
+  <!-- Task Description -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:orientation="horizontal">
+  <TextView
+      android:id="@+id/textViewTaskDescription"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      android:text="Task Description: "
+      android:layout_marginBottom="16dp"/>
+    <TextView
+        android:id="@+id/TaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+  </LinearLayout>
+
+  <!-- Task Due Date -->
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/textViewTaskDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Due Date"
+        android:layout_marginBottom="16dp"/>
+  <TextView
+      android:id="@+id/DueDate"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="16sp"
+      android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:orientation="horizontal">
+  <!-- Delete Task Button -->
+  <Button
+      android:id="@+id/buttonDeleteTask"
+      android:layout_width="150dp"
+      android:layout_height="wrap_content"
+      android:text="Delete Task"
+      android:paddingStart="16dp"
+      android:paddingEnd="16dp"
+      android:layout_marginStart="10dp"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginBottom="16dp"
+      />
+
+  <!-- Edit Task Button -->
+    <Button
+        android:id="@+id/buttonEditTask"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginStart="25dp"
+        android:text="Edit Task" />
+
+  </LinearLayout>
+
+  <!-- Mark Task as Completed Button -->
+  <Button
+      android:id="@+id/buttonMarkCompleted"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginBottom="16dp"
+      android:background="@android:color/holo_green_dark"
+      android:paddingStart="16dp"
+      android:paddingEnd="16dp"
+
+      android:text="Mark as Completed"
+      android:textColor="@android:color/white" />
+
+</LinearLayout>
